@@ -1,0 +1,68 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  Adaptive Target-Condition Neural Network: DNN-Aided Load
+  Balancing for Hybrid LiFi and WiFi Networks
+message: ATCNN
+type: dataset
+authors:
+  - given-names: Han
+    family-names: Ji
+    name-particle: Han
+    email: han.ji@ucdconnect.ie
+    affiliation: University College Dublin
+    orcid: 'https://orcid.org/0000-0003-2581-6316'
+  - given-names: Qiang
+    family-names: Wang
+    email: qiang.wang@ucdconnect.ie
+    affiliation: University College Dublin
+  - given-names: Xiping
+    family-names: Wu
+    email: xiping.wu@ucd.ie
+    affiliation: University College Dublin
+  - given-names: Stephen J.
+    family-names: Redmond
+    email: stephen.redmond@ucd.ie
+    affiliation: University College Dublin
+  - given-names: Iman
+    family-names: Tavakkolnia
+    affiliation: University of Strathclyde
+    email: i.tavakkolnia@strath.ac.uk
+identifiers:
+  - type: url
+    value: 'https://arxiv.org/abs/2208.05035'
+repository-code: 'https://github.com/HanJi-UCD/ATCNN'
+abstract: >-
+  Load balancing (LB) is a challenging issue in the hybrid
+  light fidelity (LiFi) and wireless fidelity (WiFi)
+  networks (HLWNets), due to the nature of heterogeneous
+  access points (APs). Machine learning has the potential to
+  provide a complexity-friendly LB solution with
+  near-optimal network performance, at the cost of a
+  training process. However, the state-of-the-art (SOTA)
+  learning-aided LB methods need retraining when the network
+  environment (especially the number of users) changes,
+  significantly limiting its practicability. In this paper,
+  a novel deep neural network (DNN) structure named adaptive
+  target-condition neural network (A-TCNN) is proposed,
+  which conducts AP selection for one target user upon the
+  condition of other users. Also, an adaptive mechanism is
+  developed to map a smaller number of users to a larger
+  number by splitting their data rate requirements, without
+  affecting the AP selection result for the target user.
+  This enables the proposed method to handle different
+  numbers of users without the need for retraining. The
+  ablation study demonstrates the effectiveness and
+  necessity of target-condition and adaptive mechanism in
+  A-TCNN. In addition, testing results show that the trained
+  A-TCNN can achieve 71\% and 66\% prediction accuracy with
+  less than 10\% and 15\% throughput gap respectively,
+  compared with baseline method for both 4 and 9 LiFi sizes.
+  It is also proven that A-TCNN can obtain a network
+  throughput comparable to two SOTA benchmarks while
+  reducing the runtime by up to three orders of magnitude.
+commit: Han Ji
+version: '1.0'
+date-released: '2023-07-07'
