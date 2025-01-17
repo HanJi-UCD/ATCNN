@@ -42,7 +42,10 @@ for i = 1:length(input_names)
                 end
             end    
         end  
+        %%%%%%%%%%%%%% please note here, this capacity calculation is based on basic Shannon Capacity Formula %%%%%%%%%%%%%%%%%%%%%
+        %%%%%%%%%%%%%% For a more accurate capacity, please use another LiFi capacity formula given in paper %%%%%%%%%%%%%%%%%%%%%
         Capacity = env.B.*log2(1 + SNR);
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         SNR = 10*log10(SNR); % convert SNR to dB
         SNR = max(SNR, -20); % choose -20 dB as breakpoint for minimum SNR     
         input_data(1 : AP_num*UE_num, j) = reshape(SNR, AP_num*UE_num, 1); % save SNR data
