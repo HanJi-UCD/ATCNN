@@ -51,7 +51,11 @@ class HLWNets():
                 snr_dB = 10*math.log10(snr) # in dB scale
                 snr_dB = max(snr_dB, -20) # set -20dB as min value
                 snr_list.append(snr_dB)
+            ################### This is my error correction ###################
+            ################### Please note this capacity calculation is based on the basic Shannon Capacity Formula ###################
+            ################### For a more accurate capacity, please use another LiFi capacity formula given in paper ###################
             Capacity_vector = [self.B*math.log2(1 + 10**(j/10)) for j in snr_list]
+            ###################################################################
             self.SNR_matrix.append(snr_list)
             self.Capacity.append(Capacity_vector)
     
